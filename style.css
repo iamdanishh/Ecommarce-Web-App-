@@ -1,23 +1,58 @@
+*{
+    box-sizing: border-box;
+}
 body{
     margin:0px;
     font-family: "Montserrat", sans-serif;
 }
-.container{
+@media only screen and (max-width: 477px) {
+    .card{
+            width: 40%;
+            height: auto;
+            margin: 30px 10px;
+            cursor: pointer;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgb(0 0 0 / 30%);
+            }
+            .card:hover{
+                width: 40%;
+                height: auto;
+                margin: 30px 10px;
+                cursor: pointer;
+                background-color: #fff;
+                box-shadow: 0 2px 10px rgb(0 0 0 / 70%);
+            }
+  }
+  @media only screen and (min-width: 478px) {
+    .card{
+            width: 15%;
+            min-width: 200px;
+            height: auto;
+            margin: 30px 10px;
+            cursor: pointer;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgb(0 0 0 / 30%);
+            }
+            .card:hover{
+                width: 15%;
+                min-width: 200px;
+                height: auto;
+                margin: 30px 10px;
+                cursor: pointer;
+                background-color: #fff;
+                box-shadow: 0 2px 10px rgb(0 0 0 / 70%);
+            }
+  }
+
+
+div.container{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding: 0 4%;
     
 }
-.card{
-width: 15%;
-min-width: 200px;
-height: auto;
-margin: 30px 10px;
-cursor: pointer;
-background-color: #fff;
-box-shadow: 0 2px 10px rgb(0 0 0 / 30%);
-}
+
 .previewimage{
     width: 100%;
 }
@@ -48,12 +83,14 @@ box-shadow: 0 2px 10px rgb(0 0 0 / 30%);
     color: #009688;
 }
 .heading{
+    word-wrap: normal;
     margin-top: 100px;
     margin-left: 70px;
     margin-bottom: 0px;
     color: rgb(27, 25, 25);
 }
-.heading-2{
+.heading2{
+    word-wrap: normal;
     margin-top: 100px;
     margin-left: 70px;
     margin-bottom: 0px;
